@@ -3,7 +3,7 @@ name: Build & Release APK
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # lets you trigger it manually too
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,10 +24,13 @@ jobs:
         with:
           flutter-version: '3.32.0'
           channel: stable
-          cache: true
+          cache: false
 
       - name: Install Flutter dependencies
         run: flutter pub get
+
+      - name: Clean build cache
+        run: cd android && ./gradlew clean
 
       - name: Build APK
         run: flutter build apk --debug
