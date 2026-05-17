@@ -61,12 +61,12 @@ android {
         versionName flutterVersionName
     }
 
-    signingConfigs {
+signingConfigs {
         release {
-            storeFile rootProject.file(keystoreProperties.getProperty('storeFile'))
-            storePassword keystoreProperties.getProperty('storePassword')
-            keyAlias keystoreProperties.getProperty('keyAlias')
-            keyPassword keystoreProperties.getProperty('keyPassword')
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword 'android'
         }
     }
 
