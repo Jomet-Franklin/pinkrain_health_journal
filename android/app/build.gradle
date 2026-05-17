@@ -54,7 +54,7 @@ android {
     }
 
     defaultConfig {
-        applicationId keystoreProperties.getProperty('namespace') ?: "com.example.pinkrain"
+        applicationId "com.example.pinkrain"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
