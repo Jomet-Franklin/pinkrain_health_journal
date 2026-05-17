@@ -23,7 +23,7 @@ dependencies:
   path_provider: ^2.1.5
   cristalyse: ^1.17.6
   tflite_flutter: ^0.12.1
-  pdf: ^3.10.0
+  pdf: 3.9.0
   share_plus: ^11.0.0
   flutter_local_notifications: ^19.5.0
   permission_handler: ^12.0.0+1
@@ -70,4 +70,3 @@ flutter:
         - asset: assets/fonts/Outfit.ttf
 dependency_overrides:
   lucide_icons: 0.252.0
-  vector_math: 2.1.4
