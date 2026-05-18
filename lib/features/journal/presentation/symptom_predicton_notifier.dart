@@ -16,7 +16,8 @@ class SymptomPredictionNotifier extends StateNotifier<List<SymptomPrediction>> {
     predictionInProgress = false;
   }
 
-  Future<void> predict(String text, {DateTime? startDate, DateTime? endDate}) async {
+  Future<void> predict(String text,
+      {DateTime? startDate, DateTime? endDate}) async {
     reset();
   }
 
