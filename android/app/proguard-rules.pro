@@ -2,3 +2,6 @@
 -keep class org.tensorflow.lite.** { *; }
 -keep interface org.tensorflow.lite.** { *; }
 -dontwarn org.tensorflow.lite.gpu.**
+-keep class io.flutter.** { *; }
+-keep class io.flutter.plugins.** { *; }
+-dontwarn io.flutter.embedding.**
