@@ -29,13 +29,13 @@ jobs:
       - name: Install Flutter dependencies
         run: flutter pub get
 
-      - name: Clean build cache
+      - name: Clean Gradle cache
         run: cd android && ./gradlew clean
 
       - name: Build APK
         run: flutter build apk --debug
 
-      - name: Upload APK as downloadable artifact
+      - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
         with:
           name: pinkrain-apk
