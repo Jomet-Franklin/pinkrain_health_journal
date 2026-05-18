@@ -58,14 +58,11 @@ flutter:
   assets:
     - assets/icons/
     - assets/audio-tracks/
-    # - assets/models/
-    # - assets/models/symptom_prediction/model.tflite 
-    # - assets/models/symptom_prediction/tokenizer.json
-    # - assets/models/symptom_prediction/mlb.json
 
   fonts:
     - family: Outfit
       fonts:
         - asset: assets/fonts/Outfit.ttf
+
 dependency_overrides:
   lucide_icons: 0.252.0
