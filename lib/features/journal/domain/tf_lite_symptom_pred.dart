@@ -1,6 +1,5 @@
-// TFLite feature disabled
-class TfLiteSymptomPred {
-  Future<void> init() async {}
-  Future<List<String>> predict(String input) async => [];
-  void dispose() {}
+import 'package:pinkrain/features/journal/data/symptom_prediction.dart';
+
+Future<List<SymptomPrediction>> symptomPrediction(String text) async {
+  return [];
 }
